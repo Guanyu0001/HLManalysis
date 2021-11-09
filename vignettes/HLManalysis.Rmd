@@ -1,0 +1,24 @@
+---
+title: "how to use level2summarize"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{how to use level2summarize}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(HLManalysis)
+data(mtcars)
+level2summarize(mtcars, am, mpg)
+```
+
+
+First example is about `mtcars`, which was extracted from the 1974 *Motor Trend* US magazine. The "am" is the transmission (0 = automatic, 1 = manual), "mpg" is the Miles/(US) gallon. Here we can get the descriptive statistics Miles/(US) gallon between automatic and manual transmission. 

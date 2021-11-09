@@ -1,0 +1,28 @@
+Package: HLManalysis
+Title: This package is used for analyzing multilevel models
+Version: 0.1.0
+Authors@R: 
+    person(given = "Guanyu",
+           family = "Chen",
+           role = c("aut", "cre"),
+           email = "cguanyu@student.ubc.ca")
+Description: 
+    This pacakge is used to provide some custom functions for multilevel data. 
+    `level2summarize()` is provided for provide a summary table with many descriptive statistics for a variable grouped by a specify categorical variable.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
+Imports: 
+    magrittr,
+    dplyr,
+    stats
