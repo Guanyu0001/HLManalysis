@@ -10,18 +10,14 @@
 #' level2summarize(mtcars, am, mpg) # summarize mpg based on am
 #'
 #' # 2. A fake datseat example to show parameter a can be numeric or factor
-#'a <- as.factor(c(rep(1, 10), rep(2, 10)))
-#'b <- as.numeric(c(rep(1, 10), rep(-1, 10))) # a as numeric
-#'data1 <- data.frame(a, b)
-#'level2summarize(data1, a, b)
-#'a <- as.numeric(c(rep(1, 10), rep(2, 10)))
-#'b <- as.numeric(c(rep(1, 10), rep(-1, 10))) # a as factor
-#'data1 <- data.frame(a, b)
-#'level2summarize(data1, a, b)
-#'
-#'
-#'
-#'
+#' a <- as.factor(c(rep(1, 10), rep(2, 10)))
+#' b <- as.numeric(c(rep(1, 10), rep(-1, 10))) # a as numeric
+#' data1 <- data.frame(a, b)
+#' level2summarize(data1, a, b)
+#' a <- as.numeric(c(rep(1, 10), rep(2, 10)))
+#' b <- as.numeric(c(rep(1, 10), rep(-1, 10))) # a as factor
+#' data1 <- data.frame(a, b)
+#' level2summarize(data1, a, b)
 #' @seealso [dplyr::summarize()]
 #' @importFrom magrittr "%>%"
 #' @importFrom stats "sd"
@@ -58,4 +54,3 @@ level2summarize <- function(data, a, b) {
     )
   return(summary_table)
 }
-

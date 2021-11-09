@@ -28,7 +28,7 @@ HLManalysis is not yet no CRAN. But, you can download it from this repository us
 
 
 ``` r
-devtools:: install_github("Guanyu0001/HLManalysis")
+devtools:: install_github("Guanyu0001/HLManalysis",build_vignettes = TRUE)
 ```
 
 ## Example
@@ -66,6 +66,3 @@ b <- as.numeric(c(rep(1, 10), rep(-1, 10))) # b as numeric
 data1 <- data.frame(a, b)
 level2summarize(data1, a, b)
 ```
-
-
-

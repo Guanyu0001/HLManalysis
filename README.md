@@ -19,7 +19,7 @@ HLManalysis is not yet no CRAN. But, you can download it from this
 repository using the follwoing R command:
 
 ``` r
-devtools:: install_github("Guanyu0001/HLManalysis")
+devtools:: install_github("Guanyu0001/HLManalysis",build_vignettes = TRUE)
 ```
 
 ## Example

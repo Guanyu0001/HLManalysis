@@ -24,3 +24,6 @@ test_data3 <- data.frame(a, b)
 testthat::test_that("Summary Table Testing3", {
   testthat::expect_error(level2summarize(test_data3, a, b)) # check the error
 })
+
+
+rm(test_data1, test_data2, test_data3)
